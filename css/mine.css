@@ -1,0 +1,260 @@
+.mine {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.mine header {
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 10px rgb(250, 249, 249);
+    background: rgb(42, 42, 42);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+
+@keyframes jump {
+    0% {
+        transform: translatey(-10px);
+    }
+
+    50% {
+        transform: translatey(10px) scale(0.8);
+    }
+
+    100% {
+        transform: translateY(1px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+.me {
+    margin: 0 2px;
+}
+
+.me:nth-child(1) {
+
+    animation: jump 0.6s alternate infinite;
+    animation-delay: 2s;
+}
+
+.me:nth-child(2) {
+
+    animation: jump 0.6s alternate infinite;
+    animation-delay: 2.4s;
+}
+
+.me:nth-child(3) {
+
+    animation: jump 0.6s alternate infinite;
+    animation-delay: 2.8s;
+}
+
+.me:nth-child(4) {
+
+    animation: jump 0.6s alternate infinite;
+    animation-delay: 2.2s;
+}
+
+.me:nth-child(5) {
+
+    animation: jump 0.6s alternate infinite;
+    animation-delay: 2.6s;
+}
+
+.me:nth-child(6) {
+    animation: jump 0.6s alternate infinite;
+    animation-delay: 3s;
+}
+
+.me:nth-child(7) {
+
+    animation: jump 0.6s alternate infinite;
+    animation-delay: 3.4s;
+}
+
+.mine section {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    
+}
+
+.mine section .carousel {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.my {
+
+    width: 100%;
+    height: 100%;
+}
+
+.my img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: 80% 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -250px;
+    box-shadow: 2px 2px 8px #000;
+    transition: all 0.2s linear;
+}
+.my img.move{
+    left: 53%;
+    top: 40%;
+    width: 200px;
+    height: 200px;
+}
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.bg img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.bg .c{
+    bottom: 0px;
+    z-index: 1;
+
+    
+}
+.bg .s{
+    left: 80%;
+    bottom: 20px;
+    z-index: 2;
+    display: none;
+   
+}
+.bg .g{
+    bottom: 0px;
+}
+.dh{
+    color: #000;
+    position: absolute;
+    left:50%;
+    top: 40%;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    display: none;
+    width: 500px;
+}
+
+.dh span{
+    display: inline-block;
+    color: #000;
+    width: 100px;
+    height: 28px;
+    background: rgba(230, 184, 35, 0.4);
+    margin:0 10px ;
+    border-radius: 10px;
+    /* padding: 6px; */
+    text-align: center;
+    line-height: 28px;
+    box-sizing: border-box;
+    transition: all 1s linear;
+
+}
+
+.b-g{
+margin-top: 20px;
+}
+.b-g span{
+    animation: topIn 0.6s ease-in;
+}
+
+@keyframes topIn {
+    from { 
+      transform: translateY(-20px);
+      box-shadow: 0 20px 0 rgb(76, 75, 75);
+      opacity: 0; 
+    }
+    to { 
+      transform: translateY(0px);
+      opacity: 1; 
+    }
+}
+
+/* 2 */
+.fx{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.fx img{
+    margin: 0 2px;
+}
+
+.fx img:nth-child(1){
+
+    animation: jo 1s alternate infinite;
+}
+.fx img:nth-child(2){
+  
+
+    animation: jo 1s alternate infinite ease-in-out;
+}
+.fx img:nth-child(3){
+
+    animation: jo 1s alternate infinite;
+}
+.fx img:nth-child(4){
+  
+  
+    animation: jo 1s alternate infinite ease-in-out;
+}
+.fx img:nth-child(5){
+  
+
+    animation: jo 1s alternate infinite;
+}
+
+@keyframes jo {
+    0% {
+        transform: translateY(10px)  scale(0.5) ;
+
+    }
+    50%{
+        transform: translateY(-20px)  scale(0.8) ;
+
+    }
+    100%{
+        transform: translateY(-10px)  scale(1.2) ;
+
+    }
+}
+@keyframes tom{
+    0% {
+        transform: translateX(-10px)   scale(0.5);
+
+    }
+    100%{
+        transform: translateX(0px)  scale(1.2);
+
+    } 
+}
